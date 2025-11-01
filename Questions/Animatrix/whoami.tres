@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://1lhqbjitck1b"]
+
+[ext_resource type="Texture2D" uid="uid://dsmlkgf0e0uim" path="res://assets/whoami_a.png" id="1_hfwd6"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_xfgtv"]
+[ext_resource type="Texture2D" uid="uid://coeg8ij30l6uy" path="res://assets/whoami_q.png" id="2_fjjkc"]
+
+[resource]
+script = ExtResource("1_xfgtv")
+question_image = ExtResource("2_fjjkc")
+answer_image = ExtResource("1_hfwd6")
+title = "WhoAmI"
+question = "In the short story \"The Kid\" - there is a wonderful soundtrack titled \"Who am I\" performed by who?"
+answer = "Peace Orchestra"
+value = 250
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

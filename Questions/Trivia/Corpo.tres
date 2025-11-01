@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=6 format=3 uid="uid://b1jan74b33bgw"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_5s4nq"]
+[ext_resource type="Texture2D" uid="uid://b55xk4edaaoyk" path="res://assets/meta_a.png" id="1_6eq7a"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="1_sodpy"]
+[ext_resource type="Texture2D" uid="uid://c7eldomj73imw" path="res://assets/meta_q.png" id="3_p1qk0"]
+
+[sub_resource type="Resource" id="Resource_3saqe"]
+script = ExtResource("1_sodpy")
+Choices = Array[String](["Metacortex", "Microcortex", "Megacortex"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[resource]
+script = ExtResource("1_5s4nq")
+question_image = ExtResource("3_p1qk0")
+answer_image = ExtResource("1_6eq7a")
+title = "Corpo"
+question = "What is the name of the Company that Neo works for in the Matrix?"
+answer = "Metacortex"
+value = 175
+has_choice = true
+hints = SubResource("Resource_3saqe")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

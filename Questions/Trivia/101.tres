@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://ci2lhqojvvg3p"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_nfxue"]
+[ext_resource type="Texture2D" uid="uid://ch5hgs5jgqgen" path="res://assets/101_a.png" id="1_unvyg"]
+[ext_resource type="Texture2D" uid="uid://h4pyv5r2rk8t" path="res://assets/101_q.png" id="2_ivdg6"]
+
+[resource]
+script = ExtResource("1_nfxue")
+question_image = ExtResource("2_ivdg6")
+answer_image = ExtResource("1_unvyg")
+title = "Reference"
+question = "What is Neo's apartment number in the Matrix?"
+answer = "101"
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

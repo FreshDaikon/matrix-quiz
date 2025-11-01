@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=6 format=3 uid="uid://p5lio00xr8om"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_70evo"]
+[ext_resource type="Texture2D" uid="uid://burbg305lmqv5" path="res://assets/speed_a.png" id="1_o0vxb"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="2_6g2xt"]
+[ext_resource type="Texture2D" uid="uid://q203026j846g" path="res://assets/speed_q.png" id="2_lw18x"]
+
+[sub_resource type="Resource" id="Resource_hfx70"]
+script = ExtResource("2_6g2xt")
+Choices = Array[String](["9.58 Seconds", "7.98 Seconds", "8.72 Seconds"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[resource]
+script = ExtResource("1_70evo")
+question_image = ExtResource("2_lw18x")
+answer_image = ExtResource("1_o0vxb")
+title = "Speed"
+question = "In the short \"World Record\" - the athlete who wakes himself up by running, set's an impressive time! What is his world record?"
+answer = "8.72 Seconds (100m)"
+has_choice = true
+hints = SubResource("Resource_hfx70")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

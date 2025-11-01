@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://c3eo5aj7hygjb"]
+
+[ext_resource type="Texture2D" uid="uid://bwx35qn2xghp7" path="res://assets/Kansas_q.png" id="1_3fs42"]
+[ext_resource type="Texture2D" uid="uid://d844jej117kc" path="res://assets/Kansas_a.png" id="1_lq1eu"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_lq1eu"]
+
+[resource]
+script = ExtResource("2_lq1eu")
+question_image = ExtResource("1_3fs42")
+answer_image = ExtResource("1_lq1eu")
+title = "Kansas"
+question = "\"Mister Wizard!\""
+answer = "\"Get me the hell out of here!\""
+value = 200
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

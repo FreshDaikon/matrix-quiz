@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=4 format=3 uid="uid://xfctq8aiifts"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_k3ig0"]
+[ext_resource type="Texture2D" uid="uid://dvou3xy5cubw6" path="res://assets/media_title.png" id="1_olvvr"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_olvvr"]
+
+[resource]
+script = ExtResource("2_olvvr")
+category_name = "Media"
+category_image = ExtResource("1_olvvr")
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

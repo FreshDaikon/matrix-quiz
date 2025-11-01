@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://duq186106cxoi"]
+
+[ext_resource type="Texture2D" uid="uid://btcgbwdd8h315" path="res://assets/zion_q.png" id="1_ml44s"]
+[ext_resource type="Texture2D" uid="uid://d3o6sm8c5pgvc" path="res://assets/zion_a.png" id="2_f1gxv"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_ml44s"]
+
+[resource]
+script = ExtResource("2_ml44s")
+question_image = ExtResource("2_f1gxv")
+answer_image = ExtResource("1_ml44s")
+title = "Jah"
+question = "What's the name of the last human city? "
+answer = "Zion"
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

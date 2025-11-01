@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://cpwnytrggea3v"]
+
+[ext_resource type="Texture2D" uid="uid://lwg007740nwx" path="res://assets/batman_answer.png" id="1_uutf3"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_ypbhy"]
+[ext_resource type="Texture2D" uid="uid://ffuuknfh1kgr" path="res://assets/batman_question.png" id="2_56ga6"]
+
+[resource]
+script = ExtResource("1_ypbhy")
+question_image = ExtResource("2_56ga6")
+answer_image = ExtResource("1_uutf3")
+title = "4C"
+question = "The success of Animatrix inspired Warner Brothers to make another Anime Anthology, this time about Batman, but what is it called?"
+answer = "Batman : Gotham Knight"
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

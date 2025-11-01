@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://ce5iqiid545t5"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_0xfws"]
+[ext_resource type="Texture2D" uid="uid://dux15d5q4v3pr" path="res://assets/detective_answer.png" id="1_faxc3"]
+[ext_resource type="Texture2D" uid="uid://b2yvog3e3huho" path="res://assets/detictive_question.png" id="2_i0j82"]
+
+[resource]
+script = ExtResource("1_0xfws")
+question_image = ExtResource("2_i0j82")
+answer_image = ExtResource("1_faxc3")
+title = "Kid"
+question = "The director of \"Kid's Story\" and \"Detective Story\" Shinichiro Watanabe  is better know outside of the Animatrix, for what Anime?"
+answer = "Cowboy Bebop - Samurai Champloo."
+value = 1000
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

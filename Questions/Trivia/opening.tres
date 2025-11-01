@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=2 format=3 uid="uid://uu34vjw1huim"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_apheq"]
+
+[resource]
+script = ExtResource("1_apheq")
+title = "Open"
+question = "Who is the very first character to speak in the first Movie?"
+answer = "Cypher "
+value = 150
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

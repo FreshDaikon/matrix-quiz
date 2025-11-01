@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=13 format=3 uid="uid://7hdxujswsq1e"]
+
+[ext_resource type="Texture2D" uid="uid://bm77emdb8ran3" path="res://assets/theMatrixQuotes.png" id="1_7sh04"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_qj5xv"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_7sh04"]
+[ext_resource type="Resource" uid="uid://do57tppvqg1xc" path="res://Questions/Quotes/Juristiction.tres" id="3_8t4q6"]
+[ext_resource type="Resource" uid="uid://cjb5uj0ia0oa0" path="res://Questions/Quotes/Construct.tres" id="4_ioat6"]
+[ext_resource type="Resource" uid="uid://c3eo5aj7hygjb" path="res://Questions/Quotes/Kansas.tres" id="5_fb1bq"]
+[ext_resource type="Texture2D" uid="uid://xpdvro6iqchl" path="res://assets/design_q.png" id="6_gh85v"]
+[ext_resource type="Texture2D" uid="uid://d3teve41mjd00" path="res://assets/design_a.png" id="7_o0wb8"]
+[ext_resource type="Texture2D" uid="uid://b8oinldpn87go" path="res://assets/Redemption_a.png" id="8_1ns7t"]
+[ext_resource type="Texture2D" uid="uid://iggfiwvd4q8m" path="res://assets/Redemption_q.png" id="9_biom5"]
+
+[sub_resource type="Resource" id="Resource_1ns7t"]
+script = ExtResource("1_qj5xv")
+question_image = ExtResource("7_o0wb8")
+answer_image = ExtResource("6_gh85v")
+title = "Design"
+question = "\"Thus did man become the architect\".."
+answer = "...\"of his own destruction\""
+value = 300
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_hv88r"]
+script = ExtResource("1_qj5xv")
+question_image = ExtResource("9_biom5")
+answer_image = ExtResource("8_1ns7t")
+title = "Redemption"
+question = "\"So what do you need? Besides a Miracle\"..."
+answer = "....\"Guns... Lot's of guns\""
+value = 150
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[resource]
+script = ExtResource("2_7sh04")
+category_name = "Quotes"
+category_image = ExtResource("1_7sh04")
+questions = Array[ExtResource("1_qj5xv")]([ExtResource("3_8t4q6"), ExtResource("4_ioat6"), ExtResource("5_fb1bq"), SubResource("Resource_1ns7t"), SubResource("Resource_hv88r")])
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

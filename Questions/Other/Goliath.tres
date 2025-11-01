@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://b4bl0x6h7t50m"]
+
+[ext_resource type="Texture2D" uid="uid://bbowd21p4de0q" path="res://assets/goliath_a.png" id="1_2i32q"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_pyx6p"]
+[ext_resource type="Texture2D" uid="uid://doydkbwo10r58" path="res://assets/goliath_q.png" id="2_1ekip"]
+
+[resource]
+script = ExtResource("1_pyx6p")
+question_image = ExtResource("2_1ekip")
+answer_image = ExtResource("1_2i32q")
+title = "WhatIsIt"
+question = "Formerly beloved Author Neil Gaiman, was commisioned to write a short comic for the WhatIsTheMatrix website in 1999 - what is it called?"
+answer = "Goliath"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

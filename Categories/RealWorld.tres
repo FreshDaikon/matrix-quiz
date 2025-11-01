@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=5 format=3 uid="uid://b7i2e2tamln1m"]
+
+[ext_resource type="Texture2D" uid="uid://bdq8kym0pw06t" path="res://assets/realworld_title.png" id="1_203b8"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_rlq72"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_203b8"]
+[ext_resource type="Resource" uid="uid://8pi17vuf1nu5" path="res://Questions/RealWorld/Dragula.tres" id="3_a61bd"]
+
+[resource]
+script = ExtResource("2_203b8")
+category_name = "Dessert of the Real"
+category_image = ExtResource("1_203b8")
+questions = Array[ExtResource("1_rlq72")]([ExtResource("3_a61bd")])
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

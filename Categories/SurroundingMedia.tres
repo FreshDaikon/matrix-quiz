@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=5 format=3 uid="uid://i2ky5ei77p37"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_i6c0u"]
+[ext_resource type="Texture2D" uid="uid://dnbdy6tpfkhr3" path="res://assets/surrounding_back.png" id="1_tthbl"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_tthbl"]
+[ext_resource type="Resource" uid="uid://b4bl0x6h7t50m" path="res://Questions/Other/Goliath.tres" id="3_378fl"]
+
+[resource]
+script = ExtResource("2_tthbl")
+category_name = "Other Media"
+category_image = ExtResource("1_tthbl")
+questions = Array[ExtResource("1_i6c0u")]([ExtResource("3_378fl")])
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

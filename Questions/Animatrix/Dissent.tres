@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=6 format=3 uid="uid://c7jfu1kt1i6lx"]
+
+[ext_resource type="Texture2D" uid="uid://brlglh5bjkfsl" path="res://assets/dissent_answer.png" id="1_dfadt"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_ybtqy"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="2_3w2dq"]
+[ext_resource type="Texture2D" uid="uid://dxbev5cad8ff4" path="res://assets/dissent_question.png" id="2_8u5g3"]
+
+[sub_resource type="Resource" id="Resource_8u5g3"]
+script = ExtResource("2_3w2dq")
+Choices = Array[String](["B1-17TR", "B1-26CR", "B1-66ER"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[resource]
+script = ExtResource("1_ybtqy")
+question_image = ExtResource("2_8u5g3")
+answer_image = ExtResource("1_dfadt")
+title = "Dissent"
+question = "In  The Second Renaissance Part I - what is the name of the first Dissenting Machine?"
+answer = "B1-66ER"
+value = 500
+has_choice = true
+hints = SubResource("Resource_8u5g3")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

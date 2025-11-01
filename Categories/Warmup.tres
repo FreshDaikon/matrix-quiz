@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=8 format=3 uid="uid://bhapyqen0qwmy"]
+
+[ext_resource type="Texture2D" uid="uid://cp5nfq0rfvcxw" path="res://assets/warmup_title.png" id="1_7chau"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_xej2e"]
+[ext_resource type="Resource" uid="uid://bjw2608lp0bru" path="res://Questions/Warmup/Crew.tres" id="3_5xmyx"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="3_0482e"]
+[ext_resource type="Resource" uid="uid://cv7alfkhk1ikv" path="res://Questions/Warmup/Alice.tres" id="4_ok8v3"]
+[ext_resource type="Resource" uid="uid://xjba46avjnjo" path="res://Questions/Warmup/Hunted.tres" id="5_kyjca"]
+[ext_resource type="Resource" uid="uid://duq186106cxoi" path="res://Questions/Warmup/Jah.tres" id="6_kwpmg"]
+
+[resource]
+script = ExtResource("3_0482e")
+category_name = "Warmup"
+category_image = ExtResource("1_7chau")
+questions = Array[ExtResource("2_xej2e")]([ExtResource("3_5xmyx"), ExtResource("5_kyjca"), ExtResource("6_kwpmg"), ExtResource("4_ok8v3")])
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

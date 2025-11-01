@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://cv7alfkhk1ikv"]
+
+[ext_resource type="Texture2D" uid="uid://bl1obb4857ip7" path="res://assets/alice_a.png" id="1_3saqe"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_5s4nq"]
+[ext_resource type="Texture2D" uid="uid://bl7yksarpcra6" path="res://assets/alice_q.png" id="2_61568"]
+
+[resource]
+script = ExtResource("1_5s4nq")
+question_image = ExtResource("2_61568")
+answer_image = ExtResource("1_3saqe")
+title = "Alice"
+question = "What is the color of the pill, that will show Neo, just how deep the rabbit hole goes?"
+answer = "Red"
+value = 50
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

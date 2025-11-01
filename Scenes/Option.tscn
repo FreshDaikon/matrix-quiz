@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://cemrv6m6411v4"]
+
+[ext_resource type="Script" uid="uid://dgoqf7m8xd41g" path="res://Scripts/components/option_cmp.gd" id="1_2a33a"]
+[ext_resource type="PackedScene" uid="uid://ucsga7s7a77o" path="res://Scenes/MatrixRain.tscn" id="1_qum3a"]
+[ext_resource type="FontFile" uid="uid://cm3lwb12ijjas" path="res://assets/matrix code nfi.ttf" id="1_wuxk4"]
+[ext_resource type="Script" uid="uid://rnxkjm2j2w46" path="res://Scripts/Effects/matrix_label.gd" id="4_2y1vd"]
+
+[sub_resource type="SystemFont" id="SystemFont_2y1vd"]
+
+[sub_resource type="SystemFont" id="SystemFont_2a33a"]
+subpixel_positioning = 0
+
+[node name="Option" type="MarginContainer" node_paths=PackedStringArray("point_label", "title_label")]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 100.0
+offset_bottom = 100.0
+mouse_default_cursor_shape = 7
+script = ExtResource("1_2a33a")
+point_label = NodePath("MarginContainer/VBoxContainer/Value")
+title_label = NodePath("MarginContainer/VBoxContainer/Title")
+hover_color = Color(0.72647625, 1, 0.70286185, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+mouse_filter = 1
+color = Color(0.72647625, 1, 0.70286185, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="MatrixRain" parent="MarginContainer" instance=ExtResource("1_qum3a")]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_fonts/font = ExtResource("1_wuxk4")
+text = "TITLE"
+horizontal_alignment = 1
+script = ExtResource("4_2y1vd")
+
+[node name="Value" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_fonts/font = SubResource("SystemFont_2y1vd")
+text = "1000"
+horizontal_alignment = 1
+
+[node name="Points" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_fonts/font = SubResource("SystemFont_2a33a")
+theme_override_font_sizes/font_size = 8
+text = "Points"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_fonts/font = SubResource("SystemFont_2a33a")
+theme_override_font_sizes/font_size = 6
+text = "q_data_:"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_fonts/font = SubResource("SystemFont_2a33a")
+theme_override_font_sizes/font_size = 6
+text = "MAINFRAME_01"
+horizontal_alignment = 1

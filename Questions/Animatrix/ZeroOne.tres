@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://dxeafn6rxus1t"]
+
+[ext_resource type="Texture2D" uid="uid://doj8ag3a1m5bu" path="res://assets/zero_a.png" id="1_qbrbm"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_u1wv2"]
+[ext_resource type="Texture2D" uid="uid://ckbt8tmfq564y" path="res://assets/zero_q.png" id="2_jryoo"]
+
+[resource]
+script = ExtResource("1_u1wv2")
+question_image = ExtResource("2_jryoo")
+answer_image = ExtResource("1_qbrbm")
+title = "Cradle"
+question = "What is the name of the Machine Nation"
+answer = "Zero One (01)"
+value = 150
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=2 format=3 uid="uid://ca4dnm4tot8nf"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_df15s"]
+
+[resource]
+script = ExtResource("1_df15s")
+title = "Definitely"
+question = "What's the name of the woman with the White Rabbit on her Shoulder?"
+answer = "Dujour"
+value = 150
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

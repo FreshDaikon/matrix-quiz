@@ -1,0 +1,506 @@
+[gd_scene load_steps=11 format=3 uid="uid://ctii15laf2udd"]
+
+[ext_resource type="Script" uid="uid://kab8i0kopbpk" path="res://Scripts/components/question_cmp.gd" id="1_snxqv"]
+[ext_resource type="Texture2D" uid="uid://7vcoi6vueo7e" path="res://assets/UI/Slice_Back_Pixel.png" id="2_3p72k"]
+[ext_resource type="Texture2D" uid="uid://dqjudno5ag1do" path="res://icon.svg" id="2_sqkgd"]
+[ext_resource type="Texture2D" uid="uid://c668lhxt7e3o7" path="res://assets/UI/Slice_Frame_Pixel_Flat.png" id="4_pnglj"]
+
+[sub_resource type="Animation" id="Animation_cwy3f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-640, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("VBoxContainer/Control/ColorRect/AnswerTexture:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1280, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_sqkgd"]
+resource_name = "show_answer"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(640, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.33333334, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-640, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.33333334, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.33466938),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1280, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.33221757),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("VBoxContainer/Control/ColorRect/AnswerTexture:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.33221757, 0.7686362),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1280, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3p72k"]
+resource_name = "show_question"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.33333334, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(640, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.33333334, 0.6666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-640, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.4333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.33333334, 0.6680027),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1280, 0), Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.33333334, 0.66555095),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.81960785)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("VBoxContainer/Control/ColorRect/AnswerTexture:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1280, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3p72k"]
+_data = {
+&"RESET": SubResource("Animation_cwy3f"),
+&"show_answer": SubResource("Animation_sqkgd"),
+&"show_question": SubResource("Animation_3p72k")
+}
+
+[sub_resource type="Gradient" id="Gradient_sqkgd"]
+colors = PackedColorArray(0, 0, 0, 0.25490198, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3p72k"]
+gradient = SubResource("Gradient_sqkgd")
+fill_from = Vector2(0.53846157, 1)
+fill_to = Vector2(0.48433048, 0)
+
+[node name="Question" type="MarginContainer" node_paths=PackedStringArray("question_label", "answer_label", "question_image", "answer_image", "hint_container", "hint_holder", "animator", "show_answer_button", "show_hint_button", "go_back_button")]
+custom_minimum_size = Vector2(640, 460)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -175.0
+offset_right = 125.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_snxqv")
+question_label = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer/Question")
+answer_label = NodePath("VBoxContainer/Control/ColorRect/AnswerContainer/Answer")
+question_image = NodePath("VBoxContainer/Control/ColorRect/QuestionTexture")
+answer_image = NodePath("VBoxContainer/Control/ColorRect/AnswerTexture")
+hint_container = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer/HintContainer")
+hint_holder = NodePath("VBoxContainer/Control/ColorRect/QuestionContainer/HintContainer/HintHolder")
+animator = NodePath("VBoxContainer/AnimationPlayer")
+show_answer_button = NodePath("VBoxContainer/ShowAnswerButton")
+show_hint_button = NodePath("VBoxContainer/ShowHintButton")
+go_back_button = NodePath("VBoxContainer/GoBackButton")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="VBoxContainer"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_3p72k")
+}
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="NinePatchRect" parent="VBoxContainer/Control"]
+modulate = Color(0.9997218, 0.9909796, 0.9954868, 1)
+clip_children = 1
+custom_minimum_size = Vector2(640, 360)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_3p72k")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+
+[node name="QuestionTexture" type="TextureRect" parent="VBoxContainer/Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0004272461
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sqkgd")
+expand_mode = 1
+
+[node name="AnswerTexture" type="TextureRect" parent="VBoxContainer/Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1280.0
+offset_right = -1280.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sqkgd")
+expand_mode = 1
+
+[node name="Fade" type="TextureRect" parent="VBoxContainer/Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_3p72k")
+
+[node name="QuestionContainer" type="MarginContainer" parent="VBoxContainer/Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.00024414063
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 5
+
+[node name="Question" type="Label" parent="VBoxContainer/Control/ColorRect/QuestionContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Some Cool Question!
+"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="HintContainer" type="Control" parent="VBoxContainer/Control/ColorRect/QuestionContainer"]
+layout_mode = 2
+
+[node name="Hint" type="Label" parent="VBoxContainer/Control/ColorRect/QuestionContainer/HintContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -304.5
+offset_right = 304.5
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Hints:"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="HintHolder" type="VBoxContainer" parent="VBoxContainer/Control/ColorRect/QuestionContainer/HintContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="AnswerContainer" type="MarginContainer" parent="VBoxContainer/Control/ColorRect"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_right = -640.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 5
+
+[node name="Answer" type="Label" parent="VBoxContainer/Control/ColorRect/AnswerContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 1, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Some Cool Answer!
+"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer/Control"]
+modulate = Color(0.7061667, 1, 0.57, 1)
+texture_filter = 1
+custom_minimum_size = Vector2(640, 360)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_pnglj")
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="ShowAnswerButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_colors/font_focus_color = Color(0.27583325, 1, 0.20999998, 1)
+theme_override_colors/font_hover_color = Color(0.27583325, 1, 0.20999998, 1)
+text = "Show Answer
+"
+
+[node name="ShowHintButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
+theme_override_colors/font_focus_color = Color(0.27583325, 1, 0.20999998, 1)
+theme_override_colors/font_hover_color = Color(0.27583325, 1, 0.20999998, 1)
+text = "Show Hints
+"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+modulate = Color(0.30333328, 1, 0.24000001, 1)
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="GoBackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7, 0.7699999, 1)
+theme_override_colors/font_focus_color = Color(1, 0.7, 0.7699999, 1)
+theme_override_colors/font_hover_color = Color(1, 0.26999998, 0.44033313, 1)
+text = "Back
+"

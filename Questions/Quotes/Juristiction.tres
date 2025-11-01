@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://do57tppvqg1xc"]
+
+[ext_resource type="Texture2D" uid="uid://rpe8l01e3byy" path="res://assets/juri_a.png" id="1_amtn2"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_suass"]
+[ext_resource type="Texture2D" uid="uid://bm230c7bq5mfx" path="res://assets/juri_q.png" id="2_j5ei1"]
+
+[resource]
+script = ExtResource("1_suass")
+question_image = ExtResource("2_j5ei1")
+answer_image = ExtResource("1_amtn2")
+title = "Juristiction"
+question = "\"I sent two units, they're bringing her down now\"..."
+answer = "\"No liutenant, your men are already dead\""
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

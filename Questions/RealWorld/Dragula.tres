@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://8pi17vuf1nu5"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_45phg"]
+[ext_resource type="Texture2D" uid="uid://c6y7bxurq35ey" path="res://assets/dragula_a.jpg" id="1_yox22"]
+[ext_resource type="Texture2D" uid="uid://cyi6t1jkiufs7" path="res://assets/dragula_q.png" id="2_4kvuy"]
+
+[resource]
+script = ExtResource("1_45phg")
+question_image = ExtResource("2_4kvuy")
+answer_image = ExtResource("1_yox22")
+title = "Dragula"
+question = "What's the name of the artist that made the track playing in the Nightclub where Neo and Trinity first meet?"
+answer = "Rob Zombie"
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=2 format=3 uid="uid://rianwjra6u7f"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_1a23k"]
+
+[resource]
+script = ExtResource("1_1a23k")
+title = "retcon"
+question = "In the movie, we are told the Matrix is used to produce energy, from heat and fusion using Humans. But originally the Wachowski's thought of a different plot device for keeping humans enslaved. What was it?"
+answer = "Compute (human brain power)"
+value = 200
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

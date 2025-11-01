@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=7 format=3 uid="uid://dnghxsxuwm4oe"]
+
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_3lig6"]
+[ext_resource type="Texture2D" uid="uid://c5vrkk7d0r1f7" path="res://assets/extra.png" id="1_3qg6o"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_3qg6o"]
+
+[sub_resource type="Resource" id="Resource_3qg6o"]
+script = ExtResource("1_3lig6")
+title = "Rune 01"
+question = "In 2009, Rune studied at the animation, and had a 1 week lecture with Racha Movjani (of Matrix \"green fame\"), but what did he teach? "
+answer = "VFX"
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_ddsek"]
+script = ExtResource("1_3lig6")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_ycqxc"]
+script = ExtResource("1_3lig6")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[resource]
+script = ExtResource("2_3qg6o")
+category_name = "Extra"
+category_image = ExtResource("1_3qg6o")
+questions = Array[ExtResource("1_3lig6")]([SubResource("Resource_3qg6o"), SubResource("Resource_ddsek"), SubResource("Resource_ycqxc")])
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

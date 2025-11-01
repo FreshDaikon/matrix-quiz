@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=6 format=3 uid="uid://xjba46avjnjo"]
+
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="1_ccgcb"]
+[ext_resource type="Texture2D" uid="uid://byx2i03flbvvm" path="res://assets/squid_a.png" id="1_s6m2k"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_hqxhq"]
+[ext_resource type="Texture2D" uid="uid://0wgno7rm2ngl" path="res://assets/squid_q.png" id="3_bgo6t"]
+
+[sub_resource type="Resource" id="Resource_3saqe"]
+script = ExtResource("1_ccgcb")
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[resource]
+script = ExtResource("2_hqxhq")
+question_image = ExtResource("3_bgo6t")
+answer_image = ExtResource("1_s6m2k")
+title = "Hunted"
+question = "What does the Resistanc call the robots hunting their ships in the real world?"
+answer = "Squids / Sentinels"
+value = 75
+hints = SubResource("Resource_3saqe")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

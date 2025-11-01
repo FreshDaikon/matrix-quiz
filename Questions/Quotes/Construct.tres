@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=4 format=3 uid="uid://cjb5uj0ia0oa0"]
+
+[ext_resource type="Texture2D" uid="uid://duiq784wnq1d1" path="res://assets/construct_a.png" id="1_baivr"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_bsby1"]
+[ext_resource type="Texture2D" uid="uid://brcscleg3hrr" path="res://assets/construct_q.png" id="2_qv8bi"]
+
+[resource]
+script = ExtResource("1_bsby1")
+question_image = ExtResource("2_qv8bi")
+answer_image = ExtResource("1_baivr")
+title = "Construct"
+question = "\"What are you waiting for? You're faster than this.\""
+answer = "\"Don't think you are - know you are\""
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"

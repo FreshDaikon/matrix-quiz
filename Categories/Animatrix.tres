@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=10 format=3 uid="uid://cr8kwigk8kemy"]
+
+[ext_resource type="Texture2D" uid="uid://ba5mfeg0kxnxv" path="res://assets/animatrixt-title.jpg" id="1_5gb54"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_lofsl"]
+[ext_resource type="Resource" uid="uid://ce5iqiid545t5" path="res://Questions/Animatrix/Kid.tres" id="3_58bfx"]
+[ext_resource type="Resource" uid="uid://cpwnytrggea3v" path="res://Questions/Animatrix/4C.tres" id="4_lyj67"]
+[ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="4_v0hw0"]
+[ext_resource type="Resource" uid="uid://c7jfu1kt1i6lx" path="res://Questions/Animatrix/Dissent.tres" id="5_b4p24"]
+[ext_resource type="Resource" uid="uid://dxeafn6rxus1t" path="res://Questions/Animatrix/ZeroOne.tres" id="6_thjmp"]
+[ext_resource type="Resource" uid="uid://1lhqbjitck1b" path="res://Questions/Animatrix/whoami.tres" id="7_lyj67"]
+[ext_resource type="Resource" uid="uid://p5lio00xr8om" path="res://Questions/Animatrix/speed.tres" id="8_b4p24"]
+
+[resource]
+script = ExtResource("4_v0hw0")
+category_name = "Animatrix"
+category_image = ExtResource("1_5gb54")
+questions = Array[ExtResource("2_lofsl")]([ExtResource("3_58bfx"), ExtResource("4_lyj67"), ExtResource("5_b4p24"), ExtResource("6_thjmp"), ExtResource("7_lyj67"), ExtResource("8_b4p24")])
+metadata/_custom_type_script = "uid://c1n3rimhq6alw"

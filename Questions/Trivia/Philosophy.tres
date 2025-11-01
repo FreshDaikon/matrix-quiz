@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=6 format=3 uid="uid://ch0s5dsxlgleg"]
+
+[ext_resource type="Texture2D" uid="uid://c0onwif1eim7j" path="res://assets/philosophy_a.png" id="1_rcswy"]
+[ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_tix3u"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="2_e7jox"]
+[ext_resource type="Texture2D" uid="uid://cjmkmg385l1jx" path="res://assets/philosophy_q.png" id="3_hqjfx"]
+
+[sub_resource type="Resource" id="Resource_um2k1"]
+script = ExtResource("2_e7jox")
+Choices = Array[String](["Simulacra & Simulation", "Dreams of the Machine", "The Society of the Spectacle"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[resource]
+script = ExtResource("1_tix3u")
+question_image = ExtResource("3_hqjfx")
+answer_image = ExtResource("1_rcswy")
+title = "Philosophy"
+question = "Neo hides is illicit digital goods in a hollowed out book. What's the title of that book?"
+answer = "Simulacra & Simulation"
+value = 200
+has_choice = true
+hints = SubResource("Resource_um2k1")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
