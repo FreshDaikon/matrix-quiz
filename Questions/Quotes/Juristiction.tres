@@ -11,5 +11,5 @@ answer_image = ExtResource("1_amtn2")
 title = "Juristiction"
 question = "\"I sent two units, they're bringing her down now\"..."
 answer = "\"No liutenant, your men are already dead\""
-value = 100
+value = 250
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

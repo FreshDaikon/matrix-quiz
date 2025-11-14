@@ -1,13 +1,64 @@
-[gd_resource type="Resource" script_class="CategoryResource" load_steps=5 format=3 uid="uid://i2ky5ei77p37"]
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=16 format=3 uid="uid://i2ky5ei77p37"]
 
 [ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_i6c0u"]
 [ext_resource type="Texture2D" uid="uid://dnbdy6tpfkhr3" path="res://assets/surrounding_back.png" id="1_tthbl"]
 [ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_tthbl"]
 [ext_resource type="Resource" uid="uid://b4bl0x6h7t50m" path="res://Questions/Other/Goliath.tres" id="3_378fl"]
+[ext_resource type="Texture2D" uid="uid://b35frv4k130lb" path="res://assets/games_q.png" id="3_o3r65"]
+[ext_resource type="Texture2D" uid="uid://b4kwunlrtqbfx" path="res://assets/love_a.jpg" id="4_1lp5e"]
+[ext_resource type="Texture2D" uid="uid://cuokbtsopc62u" path="res://assets/peewee_a.jpg" id="4_ci710"]
+[ext_resource type="Texture2D" uid="uid://ca074qosntyte" path="res://assets/pee_wee_a.jpg" id="5_6khb6"]
+[ext_resource type="Texture2D" uid="uid://u51o7uov43by" path="res://assets/Love_q.jpeg" id="5_bqdul"]
+[ext_resource type="Texture2D" uid="uid://dv8avwrt2c8xs" path="res://assets/graphic_a.png" id="9_5feyr"]
+[ext_resource type="Texture2D" uid="uid://c6yfbc23spluj" path="res://assets/graphic_q.png" id="10_ow4i0"]
+
+[sub_resource type="Resource" id="Resource_s0bx7"]
+resource_name = "Sequences500"
+script = ExtResource("1_i6c0u")
+question_image = ExtResource("3_o3r65")
+answer_image = ExtResource("3_o3r65")
+title = "Sequences"
+question = "How many games, based on the Matrix Franchise has been made? "
+answer = "3 (enter the matrix, path of Neo and The Matrix Online)"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_1lp5e"]
+resource_name = "Impression500"
+script = ExtResource("1_i6c0u")
+question_image = ExtResource("5_bqdul")
+answer_image = ExtResource("4_1lp5e")
+title = "Impression"
+question = "Which Character from which Comic book was Laurence Fishburne instructed to study for his Role?"
+answer = "Dream (Morpheus) - The Sandman"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_eluu0"]
+resource_name = "comics500"
+script = ExtResource("1_i6c0u")
+question_image = ExtResource("10_ow4i0")
+answer_image = ExtResource("9_5feyr")
+title = "Graphic"
+question = "How many The Matrix Comic *Volumes* have been released?"
+answer = "2"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_bqdul"]
+resource_name = "Pee-Wee1000"
+script = ExtResource("1_i6c0u")
+question_image = ExtResource("5_6khb6")
+answer_image = ExtResource("4_ci710")
+title = "Pee-Wee"
+question = "In, the Enter the Matrix Videogame, what cheat-code password references Laurence Fishburnes Pee-Wee's Playhouse character??"
+answer = "COWBOYCURTIS"
+value = 1000
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
 
 [resource]
 script = ExtResource("2_tthbl")
 category_name = "Other Media"
 category_image = ExtResource("1_tthbl")
-questions = Array[ExtResource("1_i6c0u")]([ExtResource("3_378fl")])
+questions = Array[ExtResource("1_i6c0u")]([SubResource("Resource_s0bx7"), SubResource("Resource_1lp5e"), SubResource("Resource_eluu0"), SubResource("Resource_bqdul"), ExtResource("3_378fl")])
 metadata/_custom_type_script = "uid://c1n3rimhq6alw"

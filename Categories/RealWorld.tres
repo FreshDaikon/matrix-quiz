@@ -1,13 +1,92 @@
-[gd_resource type="Resource" script_class="CategoryResource" load_steps=5 format=3 uid="uid://b7i2e2tamln1m"]
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=23 format=3 uid="uid://b7i2e2tamln1m"]
 
 [ext_resource type="Texture2D" uid="uid://bdq8kym0pw06t" path="res://assets/realworld_title.png" id="1_203b8"]
 [ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_rlq72"]
 [ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_203b8"]
 [ext_resource type="Resource" uid="uid://8pi17vuf1nu5" path="res://Questions/RealWorld/Dragula.tres" id="3_a61bd"]
+[ext_resource type="Texture2D" uid="uid://b0wsijvw4o0ha" path="res://assets/dark_city.jpg" id="4_bgujs"]
+[ext_resource type="Texture2D" uid="uid://c28daeuh0auxw" path="res://assets/dark_city_q.png" id="5_ffylr"]
+[ext_resource type="Texture2D" uid="uid://ch1xbivyj5tyv" path="res://assets/fountain_a.jpg" id="6_ca2en"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="7_pv8jo"]
+[ext_resource type="Texture2D" uid="uid://c45ytxf4g5jll" path="res://assets/fountain_q.jpg" id="8_p8yfu"]
+[ext_resource type="Texture2D" uid="uid://l1ikd0iye643" path="res://assets/mourning_a.png" id="9_p8yfu"]
+[ext_resource type="Texture2D" uid="uid://xsp8alvhngf4" path="res://assets/mourning_q.png" id="10_jaah5"]
+[ext_resource type="Texture2D" uid="uid://cw06bmu4lwa6k" path="res://assets/poster_aa.png" id="11_g0ryc"]
+[ext_resource type="Texture2D" uid="uid://cfvvd3fmrrg35" path="res://assets/poster_q.png" id="12_kp66f"]
+[ext_resource type="Texture2D" uid="uid://ucjdg8o4w1a8" path="res://assets/Passing_a.jpg" id="13_uvb1x"]
+[ext_resource type="Texture2D" uid="uid://bmf4xvg78g762" path="res://assets/Passing_q.jpg" id="14_koai7"]
+
+[sub_resource type="Resource" id="Resource_uvb1x"]
+resource_name = "release250"
+script = ExtResource("1_rlq72")
+question_image = ExtResource("12_kp66f")
+answer_image = ExtResource("11_g0ryc")
+title = "Beginnings"
+question = "What year was The Matrix released in theaters?"
+answer = "1999"
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_pkkw0"]
+resource_name = "Brown500"
+script = ExtResource("1_rlq72")
+question_image = ExtResource("5_ffylr")
+answer_image = ExtResource("4_bgujs")
+title = "Brown"
+question = "The opening scene where Trinity is running away from the Agents, was filmed on the rooftop set left over from what movie production?"
+answer = "Dark City"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_rm6ww"]
+resource_name = "passing1000"
+script = ExtResource("1_rlq72")
+question_image = ExtResource("14_koai7")
+answer_image = ExtResource("13_uvb1x")
+title = "Passing"
+question = "Sadly, the wonderful and acclaimed actor Gloria Foster passed away between The Matrix Reloaded and The Matrix Revolutions - who stepped up to take on the role for the final film?"
+answer = "Mary Alice"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_jaah5"]
+script = ExtResource("7_pv8jo")
+Choices = Array[String](["Madison Square Fountain - New York", "Drumheller Fountain - Seattle", "Martin Place Fountain - Sydney"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[sub_resource type="Resource" id="Resource_g0ryc"]
+resource_name = "Fountain1000"
+script = ExtResource("1_rlq72")
+question_image = ExtResource("8_p8yfu")
+answer_image = ExtResource("6_ca2en")
+title = "Fountain"
+question = "The \"Agent Program\" designed to teach Neo one thing, is filmed in fron of what iconic Fountain?"
+answer = "The fountain at Martin Place - Sydney"
+value = 1000
+has_choice = true
+hints = SubResource("Resource_jaah5")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_p8yfu"]
+script = ExtResource("7_pv8jo")
+Choices = Array[String](["Aaliyah", "Keyshia Cole", "Ashanti Shequoiya"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[sub_resource type="Resource" id="Resource_kp66f"]
+resource_name = "Mourning1000"
+script = ExtResource("1_rlq72")
+question_image = ExtResource("10_jaah5")
+answer_image = ExtResource("9_p8yfu")
+title = "Mourning"
+question = "Which famous R&B Singer was originally cast to Play Zee in Reloaded, but passed away during filming, requiring her scenes to be reshot? ?"
+answer = "Aaliyah"
+value = 1000
+has_choice = true
+hints = SubResource("Resource_p8yfu")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
 
 [resource]
 script = ExtResource("2_203b8")
 category_name = "Dessert of the Real"
 category_image = ExtResource("1_203b8")
-questions = Array[ExtResource("1_rlq72")]([ExtResource("3_a61bd")])
+questions = Array[ExtResource("1_rlq72")]([SubResource("Resource_uvb1x"), ExtResource("3_a61bd"), SubResource("Resource_pkkw0"), SubResource("Resource_rm6ww"), SubResource("Resource_g0ryc"), SubResource("Resource_kp66f")])
 metadata/_custom_type_script = "uid://c1n3rimhq6alw"

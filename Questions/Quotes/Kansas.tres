@@ -11,5 +11,5 @@ answer_image = ExtResource("1_lq1eu")
 title = "Kansas"
 question = "\"Mister Wizard!\""
 answer = "\"Get me the hell out of here!\""
-value = 200
+value = 250
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

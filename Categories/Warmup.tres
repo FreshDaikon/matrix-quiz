@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CategoryResource" load_steps=8 format=3 uid="uid://bhapyqen0qwmy"]
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=23 format=3 uid="uid://bhapyqen0qwmy"]
 
 [ext_resource type="Texture2D" uid="uid://cp5nfq0rfvcxw" path="res://assets/warmup_title.png" id="1_7chau"]
 [ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_xej2e"]
@@ -7,10 +7,75 @@
 [ext_resource type="Resource" uid="uid://cv7alfkhk1ikv" path="res://Questions/Warmup/Alice.tres" id="4_ok8v3"]
 [ext_resource type="Resource" uid="uid://xjba46avjnjo" path="res://Questions/Warmup/Hunted.tres" id="5_kyjca"]
 [ext_resource type="Resource" uid="uid://duq186106cxoi" path="res://Questions/Warmup/Jah.tres" id="6_kwpmg"]
+[ext_resource type="Texture2D" uid="uid://dc273n1o4r5kc" path="res://assets/cog_a.png" id="7_kyjca"]
+[ext_resource type="Texture2D" uid="uid://dannoyr8nxquv" path="res://assets/cog_q.png" id="8_kwpmg"]
+[ext_resource type="Texture2D" uid="uid://bavdhtmbgfbe2" path="res://assets/training_q.png" id="9_15vhj"]
+[ext_resource type="Texture2D" uid="uid://pvmkvdnfbvjh" path="res://assets/training_a.png" id="10_alnfd"]
+[ext_resource type="Texture2D" uid="uid://napoyve7l7lq" path="res://Frenchnam_q.png" id="11_xo7xt"]
+[ext_resource type="Texture2D" uid="uid://coj5d1mvng836" path="res://french_o_q.png" id="12_roxjf"]
+[ext_resource type="Texture2D" uid="uid://22e8ncpdjrtd" path="res://assets/Task_a.png" id="13_x4es4"]
+[ext_resource type="Texture2D" uid="uid://8hevknchgu8h" path="res://assets/task_q.png" id="14_uycoe"]
+[ext_resource type="Texture2D" uid="uid://cwf8dvpf5stsp" path="res://assets/providence_a.png" id="15_ck00s"]
+[ext_resource type="Texture2D" uid="uid://cc3u0i3cl03wk" path="res://assets/providence_q.png" id="16_oudvd"]
+
+[sub_resource type="Resource" id="Resource_ck00s"]
+resource_name = "Task"
+script = ExtResource("2_xej2e")
+question_image = ExtResource("14_uycoe")
+answer_image = ExtResource("13_x4es4")
+title = "Task"
+question = "In the beginning, Neo is told on his computer to do what?"
+answer = "Follow the white Rabbit."
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_5rs54"]
+resource_name = "prov100"
+script = ExtResource("2_xej2e")
+question_image = ExtResource("16_oudvd")
+answer_image = ExtResource("15_ck00s")
+title = "Providence"
+question = "What's the name of the lady who can tell Neo what he needs to hear?"
+answer = "The Oracle"
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_15vhj"]
+resource_name = "Cog"
+script = ExtResource("2_xej2e")
+question_image = ExtResource("8_kwpmg")
+answer_image = ExtResource("7_kyjca")
+title = "Cog"
+question = "What's Neo's real name?"
+answer = "Thomas Anderson"
+value = 100
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_kyjca"]
+resource_name = "Martial"
+script = ExtResource("2_xej2e")
+question_image = ExtResource("10_alnfd")
+answer_image = ExtResource("9_15vhj")
+title = "Martial"
+question = "When Neo start his training with Tank, he's suprised that he is going to learn what?"
+answer = "Jujutsu"
+value = 250
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_x4es4"]
+resource_name = "Mobster"
+script = ExtResource("2_xej2e")
+question_image = ExtResource("12_roxjf")
+answer_image = ExtResource("11_xo7xt")
+title = "Mobster"
+question = "What's the name of the program Neo and gang needs to go through to get to the Keymaker?"
+answer = "The Merovingian / The Frenchman"
+value = 250
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
 
 [resource]
 script = ExtResource("3_0482e")
 category_name = "Warmup"
 category_image = ExtResource("1_7chau")
-questions = Array[ExtResource("2_xej2e")]([ExtResource("3_5xmyx"), ExtResource("5_kyjca"), ExtResource("6_kwpmg"), ExtResource("4_ok8v3")])
+questions = Array[ExtResource("2_xej2e")]([ExtResource("3_5xmyx"), ExtResource("6_kwpmg"), SubResource("Resource_ck00s"), SubResource("Resource_5rs54"), ExtResource("4_ok8v3"), ExtResource("5_kyjca"), SubResource("Resource_15vhj"), SubResource("Resource_kyjca"), SubResource("Resource_x4es4")])
 metadata/_custom_type_script = "uid://c1n3rimhq6alw"

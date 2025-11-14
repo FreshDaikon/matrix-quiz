@@ -11,5 +11,5 @@ answer_image = ExtResource("1_3saqe")
 title = "Alice"
 question = "What is the color of the pill, that will show Neo, just how deep the rabbit hole goes?"
 answer = "Red"
-value = 50
+value = 100
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

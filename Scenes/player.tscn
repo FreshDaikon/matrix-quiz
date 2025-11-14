@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://dlc6ifgf85ho7"]
 
 [ext_resource type="Script" uid="uid://cmsj1lhsyniv8" path="res://Scripts/components/player_cmp.gd" id="1_6t5aa"]
-[ext_resource type="Texture2D" uid="uid://cop3fud1t0qn1" path="res://assets/pfp_nan.png" id="1_cvnsp"]
 [ext_resource type="FontFile" uid="uid://blu7xymse03hq" path="res://assets/matrix code nfi.otf" id="2_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://c6wx64qan1ef7" path="res://assets/UI/Slice_Back_small_01.png" id="2_fkybt"]
 [ext_resource type="Script" uid="uid://rnxkjm2j2w46" path="res://Scripts/Effects/matrix_label.gd" id="4_vgqql"]
+[ext_resource type="Texture2D" uid="uid://bqme4le0lnbcu" path="res://assets/floady.png" id="5_fkybt"]
 
 [sub_resource type="SystemFont" id="SystemFont_cvnsp"]
 
@@ -16,7 +16,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 script = ExtResource("1_6t5aa")
 player_pfp = NodePath("Frame/VBoxContainer2/Container/PfP_Texture")
-player_name = NodePath("Frame/VBoxContainer2/Container/PlayerName")
+player_name = NodePath("Frame/VBoxContainer2/PlayerName")
 point_label = NodePath("Frame/VBoxContainer2/VBoxContainer/Points")
 full_button = NodePath("Frame/VBoxContainer2/VBoxContainer/HBoxContainer/Full")
 half_button = NodePath("Frame/VBoxContainer2/VBoxContainer/HBoxContainer/Half")
@@ -39,22 +39,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Container" type="MarginContainer" parent="Frame/VBoxContainer2"]
-custom_minimum_size = Vector2(100, 100)
+[node name="Control" type="Control" parent="Frame/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 15)
 layout_mode = 2
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 15
-theme_override_constants/margin_bottom = 5
 
-[node name="PfP_Texture" type="TextureRect" parent="Frame/VBoxContainer2/Container"]
-custom_minimum_size = Vector2(75, 75)
+[node name="PlayerName" type="Label" parent="Frame/VBoxContainer2"]
 layout_mode = 2
-texture = ExtResource("1_cvnsp")
-expand_mode = 1
-
-[node name="PlayerName" type="Label" parent="Frame/VBoxContainer2/Container"]
-layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.72647625, 1, 0.70286185, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -63,6 +54,24 @@ theme_override_fonts/font = ExtResource("2_6t5aa")
 text = "PLAYER NAME"
 horizontal_alignment = 1
 script = ExtResource("4_vgqql")
+
+[node name="Container" type="MarginContainer" parent="Frame/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="PfP_Texture" type="TextureRect" parent="Frame/VBoxContainer2/Container"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_fkybt")
+expand_mode = 2
+stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Frame/VBoxContainer2"]
 layout_mode = 2

@@ -11,13 +11,14 @@ Choices = Array[String](["Veritas Aeternum", "Temet Nosce", "Nosce Veritatem"])
 metadata/_custom_type_script = "uid://k1e3hjoryoed"
 
 [resource]
+resource_name = "1000"
 script = ExtResource("1_oyi2f")
 question_image = ExtResource("3_d6c1q")
 answer_image = ExtResource("1_hqiwm")
 title = "Fate"
 question = "Above the Oracle's door, there is a placcard that, when translated to english says \"Know Thyself\", but what is it in Latin?"
 answer = "Temet Nosce"
-value = 200
+value = 1000
 has_choice = true
 hints = SubResource("Resource_etq0d")
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

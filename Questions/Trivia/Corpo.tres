@@ -11,13 +11,14 @@ Choices = Array[String](["Metacortex", "Microcortex", "Megacortex"])
 metadata/_custom_type_script = "uid://k1e3hjoryoed"
 
 [resource]
+resource_name = "250"
 script = ExtResource("1_5s4nq")
 question_image = ExtResource("3_p1qk0")
 answer_image = ExtResource("1_6eq7a")
 title = "Corpo"
 question = "What is the name of the Company that Neo works for in the Matrix?"
 answer = "Metacortex"
-value = 175
+value = 250
 has_choice = true
 hints = SubResource("Resource_3saqe")
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

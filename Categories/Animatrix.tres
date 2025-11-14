@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CategoryResource" load_steps=10 format=3 uid="uid://cr8kwigk8kemy"]
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=24 format=3 uid="uid://cr8kwigk8kemy"]
 
 [ext_resource type="Texture2D" uid="uid://ba5mfeg0kxnxv" path="res://assets/animatrixt-title.jpg" id="1_5gb54"]
 [ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="2_lofsl"]
@@ -9,10 +9,77 @@
 [ext_resource type="Resource" uid="uid://dxeafn6rxus1t" path="res://Questions/Animatrix/ZeroOne.tres" id="6_thjmp"]
 [ext_resource type="Resource" uid="uid://1lhqbjitck1b" path="res://Questions/Animatrix/whoami.tres" id="7_lyj67"]
 [ext_resource type="Resource" uid="uid://p5lio00xr8om" path="res://Questions/Animatrix/speed.tres" id="8_b4p24"]
+[ext_resource type="Texture2D" uid="uid://cxic43qp0upiw" path="res://assets/numerology_a.jpg" id="9_thjmp"]
+[ext_resource type="Texture2D" uid="uid://cmiw1o6cvib5d" path="res://assets/kawa_a.png" id="10_kmepb"]
+[ext_resource type="Texture2D" uid="uid://bom4klu7pais7" path="res://assets/ringtone_a.png" id="10_wh815"]
+[ext_resource type="Texture2D" uid="uid://bnhriax4hcq1y" path="res://assets/kawa_q.jpg" id="11_51846"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="11_epc0y"]
+[ext_resource type="Texture2D" uid="uid://cr2egi07nt146" path="res://assets/ringtone_q.png" id="12_kmepb"]
+[ext_resource type="Texture2D" uid="uid://3xj5fnx2fmfw" path="res://assets/unfair_a.png" id="15_lpeeo"]
+[ext_resource type="Texture2D" uid="uid://bucs8bfni5n20" path="res://assets/unfair_q.png" id="16_bu7ds"]
+
+[sub_resource type="Resource" id="Resource_thjmp"]
+resource_name = "Final Flight"
+script = ExtResource("2_lofsl")
+title = "Final Flight"
+question = "In the Short \"Final Flight\" "
+value = 250
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_cto1x"]
+resource_name = "Numerology"
+script = ExtResource("2_lofsl")
+question_image = ExtResource("1_5gb54")
+answer_image = ExtResource("9_thjmp")
+title = "Numerology"
+question = "How many shorts is The Animatrix Comprised of?"
+answer = "9"
+value = 250
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_bu7ds"]
+resource_name = "Kawa"
+script = ExtResource("2_lofsl")
+question_image = ExtResource("11_51846")
+answer_image = ExtResource("10_kmepb")
+title = "Kawa"
+question = "Legenday animator and Director Yoshiaki Kawajiri, behind classics like Wicked City, Ninja Scroll and Vampire Hunter D, directed which Short in the Animatrix?"
+answer = "Program"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_51846"]
+script = ExtResource("11_epc0y")
+Choices = Array[String](["Donguri Korokoro", "Toryanse", "Zo-San"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[sub_resource type="Resource" id="Resource_lpeeo"]
+resource_name = "Ringtone"
+script = ExtResource("2_lofsl")
+question_image = ExtResource("12_kmepb")
+answer_image = ExtResource("10_wh815")
+title = "Ringtone"
+question = "In the beginning of the short \"Beyond\" a melody plays when people are crossing the street. What's the name of this classical tune?"
+answer = "Toryanse"
+value = 2000
+has_choice = true
+hints = SubResource("Resource_51846")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_e86br"]
+resource_name = "Unfair1000"
+script = ExtResource("2_lofsl")
+question_image = ExtResource("16_bu7ds")
+answer_image = ExtResource("15_lpeeo")
+title = "Unfair"
+question = "What is Rune's favorite Short in the Animatrix?"
+answer = "The Second Renaissance Part I  "
+value = 1000
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
 
 [resource]
 script = ExtResource("4_v0hw0")
 category_name = "Animatrix"
 category_image = ExtResource("1_5gb54")
-questions = Array[ExtResource("2_lofsl")]([ExtResource("3_58bfx"), ExtResource("4_lyj67"), ExtResource("5_b4p24"), ExtResource("6_thjmp"), ExtResource("7_lyj67"), ExtResource("8_b4p24")])
+questions = Array[ExtResource("2_lofsl")]([SubResource("Resource_thjmp"), SubResource("Resource_cto1x"), ExtResource("4_lyj67"), ExtResource("6_thjmp"), SubResource("Resource_bu7ds"), ExtResource("7_lyj67"), ExtResource("5_b4p24"), ExtResource("8_b4p24"), ExtResource("3_58bfx"), SubResource("Resource_lpeeo"), SubResource("Resource_e86br")])
 metadata/_custom_type_script = "uid://c1n3rimhq6alw"

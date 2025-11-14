@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://nie414glaekj"]
+[gd_scene load_steps=25 format=3 uid="uid://nie414glaekj"]
 
 [ext_resource type="Script" uid="uid://ckgnvdtvbqnug" path="res://Scripts/quiz.gd" id="1_kln2b"]
 [ext_resource type="Script" uid="uid://c1n3rimhq6alw" path="res://Scripts/Resources/category_res.gd" id="2_rgh2o"]
@@ -13,35 +13,32 @@
 [ext_resource type="Resource" uid="uid://bhapyqen0qwmy" path="res://Categories/Warmup.tres" id="7_erwvk"]
 [ext_resource type="PackedScene" uid="uid://ucsga7s7a77o" path="res://Scenes/MatrixRain.tscn" id="7_jw32o"]
 [ext_resource type="FontFile" uid="uid://cm3lwb12ijjas" path="res://assets/matrix code nfi.ttf" id="8_50glp"]
-[ext_resource type="Resource" uid="uid://dnghxsxuwm4oe" path="res://Categories/Extra.tres" id="9_346fj"]
 [ext_resource type="Script" uid="uid://rnxkjm2j2w46" path="res://Scripts/Effects/matrix_label.gd" id="9_vy5pj"]
+[ext_resource type="Texture2D" uid="uid://cj0akup1raf66" path="res://assets/polygonTiger.png" id="10_346fj"]
 [ext_resource type="PackedScene" uid="uid://cemrv6m6411v4" path="res://Scenes/Option.tscn" id="10_bmxlf"]
+[ext_resource type="Texture2D" uid="uid://bqme4le0lnbcu" path="res://assets/floady.png" id="11_0sclb"]
 [ext_resource type="FontFile" uid="uid://blu7xymse03hq" path="res://assets/matrix code nfi.otf" id="11_4kpch"]
+[ext_resource type="Texture2D" uid="uid://bt3xs5atfb4m5" path="res://assets/morgenstern.png" id="11_sxkr1"]
 [ext_resource type="PackedScene" uid="uid://dlc6ifgf85ho7" path="res://Scenes/player.tscn" id="13_frkhe"]
+[ext_resource type="Texture2D" uid="uid://chtufiwllhwao" path="res://assets/quizmaster.png" id="18_fq0cl"]
 
 [sub_resource type="Resource" id="Resource_1p5hy"]
+resource_name = "PolygonTiger"
 script = ExtResource("5_frkhe")
-player_name = "Filip"
+player_name = "PolygonTiger"
+player_pfp = ExtResource("10_346fj")
 metadata/_custom_type_script = "uid://cil78uh4305bb"
 
 [sub_resource type="Resource" id="Resource_h1m7h"]
 script = ExtResource("5_frkhe")
-player_name = "Piotr"
+player_name = "Morgensztern"
+player_pfp = ExtResource("11_sxkr1")
 metadata/_custom_type_script = "uid://cil78uh4305bb"
 
 [sub_resource type="Resource" id="Resource_erwvk"]
 script = ExtResource("5_frkhe")
-player_name = "Meesters"
-metadata/_custom_type_script = "uid://cil78uh4305bb"
-
-[sub_resource type="Resource" id="Resource_2w5on"]
-script = ExtResource("5_frkhe")
-player_name = "Derek"
-metadata/_custom_type_script = "uid://cil78uh4305bb"
-
-[sub_resource type="Resource" id="Resource_346fj"]
-script = ExtResource("5_frkhe")
-player_name = "Oskar"
+player_name = "Floady"
+player_pfp = ExtResource("11_0sclb")
 metadata/_custom_type_script = "uid://cil78uh4305bb"
 
 [node name="CanvasLayer" type="CanvasLayer"]
@@ -66,8 +63,8 @@ player_holder = NodePath("../QuizContainer/PlayerPanel/MarginContainer/PlayerHol
 question_component = NodePath("../QuizContainer/QuizPanel/VBoxContainer/Elements_Container/QuestionContainer/QuestionComponent")
 category_label = NodePath("../QuizContainer/QuizPanel/VBoxContainer/Elements_Container/Options_Container/CategoryLabel")
 options_back = NodePath("../QuizContainer/QuizPanel/VBoxContainer/Elements_Container/Options_Container/Button")
-categories = Array[ExtResource("2_rgh2o")]([ExtResource("7_erwvk"), ExtResource("4_1p5hy"), ExtResource("5_h1m7h"), ExtResource("6_346fj"), ExtResource("3_pbw6q"), ExtResource("4_grg3l"), ExtResource("9_346fj")])
-players = Array[ExtResource("5_frkhe")]([SubResource("Resource_1p5hy"), SubResource("Resource_h1m7h"), SubResource("Resource_erwvk"), SubResource("Resource_2w5on"), SubResource("Resource_346fj")])
+categories = Array[ExtResource("2_rgh2o")]([ExtResource("7_erwvk"), ExtResource("4_1p5hy"), ExtResource("5_h1m7h"), ExtResource("6_346fj"), ExtResource("3_pbw6q"), ExtResource("4_grg3l")])
+players = Array[ExtResource("5_frkhe")]([SubResource("Resource_1p5hy"), SubResource("Resource_h1m7h"), SubResource("Resource_erwvk")])
 category_scene = ExtResource("4_pbw6q")
 option_scene = ExtResource("10_bmxlf")
 question_scene = ExtResource("5_v1gob")
@@ -77,6 +74,20 @@ player_scene = ExtResource("13_frkhe")
 modulate = Color(0.97060233, 0.97060245, 0.97060233, 0.49019608)
 layout_mode = 1
 
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -89.99994
+offset_top = 49.999985
+offset_right = -48.792664
+offset_bottom = 88.603714
+grow_horizontal = 2
+rotation = -0.32134166
+texture = ExtResource("18_fq0cl")
+expand_mode = 1
+
 [node name="QuizContainer" type="HBoxContainer" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -84,6 +95,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="QuizPanel" type="Panel" parent="Control/QuizContainer"]
 self_modulate = Color(1, 1, 1, 0)
@@ -92,6 +104,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 1
 mouse_default_cursor_shape = 3
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/QuizContainer/QuizPanel"]
 layout_mode = 1
@@ -100,6 +113,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="Title_Label" type="Label" parent="Control/QuizContainer/QuizPanel/VBoxContainer"]
 layout_mode = 2
@@ -110,6 +124,7 @@ theme_override_font_sizes/font_size = 21
 text = "the big matrix quiz"
 horizontal_alignment = 1
 script = ExtResource("9_vy5pj")
+metadata/_edit_lock_ = true
 
 [node name="By_Label" type="Label" parent="Control/QuizContainer/QuizPanel/VBoxContainer"]
 layout_mode = 2
@@ -119,10 +134,12 @@ theme_override_fonts/font = ExtResource("8_50glp")
 text = "by rune"
 horizontal_alignment = 1
 script = ExtResource("9_vy5pj")
+metadata/_edit_lock_ = true
 
 [node name="Elements_Container" type="Control" parent="Control/QuizContainer/QuizPanel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+metadata/_edit_lock_ = true
 
 [node name="Categories_Container" type="Panel" parent="Control/QuizContainer/QuizPanel/VBoxContainer/Elements_Container"]
 self_modulate = Color(0, 0, 0, 0.12156863)
@@ -132,6 +149,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="Categories" type="MarginContainer" parent="Control/QuizContainer/QuizPanel/VBoxContainer/Elements_Container/Categories_Container"]
 layout_mode = 1
@@ -141,6 +159,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_top = 20
+metadata/_edit_lock_ = true
 
 [node name="CategoriesHolder" type="HFlowContainer" parent="Control/QuizContainer/QuizPanel/VBoxContainer/Elements_Container/Categories_Container/Categories"]
 layout_mode = 2
@@ -148,6 +167,7 @@ size_flags_vertical = 4
 theme_override_constants/h_separation = 15
 theme_override_constants/v_separation = 15
 alignment = 1
+metadata/_edit_lock_ = true
 
 [node name="Options_Container" type="Panel" parent="Control/QuizContainer/QuizPanel/VBoxContainer/Elements_Container"]
 visible = false
@@ -214,6 +234,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="QuestionComponent" parent="Control/QuizContainer/QuizPanel/VBoxContainer/Elements_Container/QuestionContainer" instance=ExtResource("5_v1gob")]
 layout_mode = 1

@@ -11,5 +11,5 @@ answer_image = ExtResource("1_baivr")
 title = "Construct"
 question = "\"What are you waiting for? You're faster than this.\""
 answer = "\"Don't think you are - know you are\""
-value = 100
+value = 250
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

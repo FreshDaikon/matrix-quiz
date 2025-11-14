@@ -11,16 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://b8oinldpn87go" path="res://assets/Redemption_a.png" id="8_1ns7t"]
 [ext_resource type="Texture2D" uid="uid://iggfiwvd4q8m" path="res://assets/Redemption_q.png" id="9_biom5"]
 
-[sub_resource type="Resource" id="Resource_1ns7t"]
-script = ExtResource("1_qj5xv")
-question_image = ExtResource("7_o0wb8")
-answer_image = ExtResource("6_gh85v")
-title = "Design"
-question = "\"Thus did man become the architect\".."
-answer = "...\"of his own destruction\""
-value = 300
-metadata/_custom_type_script = "uid://bpwvew6iwebbu"
-
 [sub_resource type="Resource" id="Resource_hv88r"]
 script = ExtResource("1_qj5xv")
 question_image = ExtResource("9_biom5")
@@ -28,12 +18,22 @@ answer_image = ExtResource("8_1ns7t")
 title = "Redemption"
 question = "\"So what do you need? Besides a Miracle\"..."
 answer = "....\"Guns... Lot's of guns\""
-value = 150
+value = 250
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_1ns7t"]
+script = ExtResource("1_qj5xv")
+question_image = ExtResource("7_o0wb8")
+answer_image = ExtResource("6_gh85v")
+title = "Design"
+question = "\"Thus did man become the architect\".."
+answer = "...\"of his own destruction\""
+value = 1000
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"
 
 [resource]
 script = ExtResource("2_7sh04")
 category_name = "Quotes"
 category_image = ExtResource("1_7sh04")
-questions = Array[ExtResource("1_qj5xv")]([ExtResource("3_8t4q6"), ExtResource("4_ioat6"), ExtResource("5_fb1bq"), SubResource("Resource_1ns7t"), SubResource("Resource_hv88r")])
+questions = Array[ExtResource("1_qj5xv")]([ExtResource("3_8t4q6"), ExtResource("4_ioat6"), ExtResource("5_fb1bq"), SubResource("Resource_hv88r"), SubResource("Resource_1ns7t")])
 metadata/_custom_type_script = "uid://c1n3rimhq6alw"

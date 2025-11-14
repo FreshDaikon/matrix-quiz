@@ -11,4 +11,5 @@ answer_image = ExtResource("1_uutf3")
 title = "4C"
 question = "The success of Animatrix inspired Warner Brothers to make another Anime Anthology, this time about Batman, but what is it called?"
 answer = "Batman : Gotham Knight"
+value = 250
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

@@ -5,11 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://cyi6t1jkiufs7" path="res://assets/dragula_q.png" id="2_4kvuy"]
 
 [resource]
+resource_name = "drag500"
 script = ExtResource("1_45phg")
 question_image = ExtResource("2_4kvuy")
 answer_image = ExtResource("1_yox22")
 title = "Dragula"
 question = "What's the name of the artist that made the track playing in the Nightclub where Neo and Trinity first meet?"
 answer = "Rob Zombie"
-value = 100
+value = 500
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

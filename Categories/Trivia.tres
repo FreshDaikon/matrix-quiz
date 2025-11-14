@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CategoryResource" load_steps=7 format=3 uid="uid://dqpuw62gw74vi"]
+[gd_resource type="Resource" script_class="CategoryResource" load_steps=37 format=3 uid="uid://dqpuw62gw74vi"]
 
 [ext_resource type="Texture2D" uid="uid://b06p3gdicxbpn" path="res://assets/theMatrixTrivia.png" id="1_c5v2t"]
 [ext_resource type="Script" uid="uid://bpwvew6iwebbu" path="res://Scripts/Resources/question_res.gd" id="1_xrbpu"]
@@ -6,10 +6,149 @@
 [ext_resource type="Resource" uid="uid://ch0s5dsxlgleg" path="res://Questions/Trivia/Philosophy.tres" id="3_wamyu"]
 [ext_resource type="Resource" uid="uid://k3ukbiodjww" path="res://Questions/Trivia/Fate.tres" id="4_8sjra"]
 [ext_resource type="Resource" uid="uid://b1jan74b33bgw" path="res://Questions/Trivia/Corpo.tres" id="5_8sjra"]
+[ext_resource type="Texture2D" uid="uid://bc15n4d2xg6x3" path="res://assets/nutritious_a.png" id="6_flrx2"]
+[ext_resource type="Texture2D" uid="uid://briv56nm3d4a6" path="res://assets/nutritious_q.png" id="7_acaur"]
+[ext_resource type="Texture2D" uid="uid://b5itmaqq2tfgf" path="res://assets/gods_a.png" id="8_744qp"]
+[ext_resource type="Script" uid="uid://k1e3hjoryoed" path="res://Scripts/Resources/multi_help_res.gd" id="9_0u8bg"]
+[ext_resource type="Texture2D" uid="uid://bv110sjrcsje3" path="res://assets/gods_q.png" id="9_54j50"]
+[ext_resource type="Texture2D" uid="uid://bhnxvf6sy48rq" path="res://assets/scripture_a.png" id="11_vxf8y"]
+[ext_resource type="Texture2D" uid="uid://etx6dr8de6c3" path="res://assets/scripture_q.png" id="12_rtn3b"]
+[ext_resource type="Texture2D" uid="uid://bnv6bda8h8sig" path="res://assets/premiditated_a.png" id="13_hsfhm"]
+[ext_resource type="Texture2D" uid="uid://ccmn48egiyos" path="res://assets/premiditated_qpng.png" id="14_jr867"]
+[ext_resource type="Texture2D" uid="uid://b665ggr5w0fus" path="res://assets/terror_a_.png" id="14_nk0h5"]
+[ext_resource type="Texture2D" uid="uid://46r0dy8trt4m" path="res://assets/annihilation_apng.png" id="15_0ro2x"]
+[ext_resource type="Texture2D" uid="uid://c6ofudvan2gk0" path="res://assets/terror_q.png" id="15_5buqs"]
+[ext_resource type="Texture2D" uid="uid://bmdu5pjpidti1" path="res://assets/annihilation_q.png" id="16_ojuc5"]
+[ext_resource type="Texture2D" uid="uid://b411ht7tokmd4" path="res://assets/Fear_a.png" id="17_4h1cv"]
+[ext_resource type="Texture2D" uid="uid://dbvc1lgdheoqp" path="res://assets/fear_q.png" id="18_wsl1q"]
+[ext_resource type="Texture2D" uid="uid://bgqed2uixjf8k" path="res://assets/Kiss_q.png" id="19_wsl1q"]
+[ext_resource type="Texture2D" uid="uid://eflg4hn642ay" path="res://assets/boot_a.png" id="22_3hocy"]
+[ext_resource type="Texture2D" uid="uid://c7r8tf4d5isnx" path="res://assets/boot_q.png" id="23_f7lgo"]
+
+[sub_resource type="Resource" id="Resource_g0xj5"]
+resource_name = "nutriout"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("7_acaur")
+answer_image = ExtResource("6_flrx2")
+title = "Nutrious"
+question = "When Dozer elaborates on Neo's breakfast, he says it's a single cell protein combined with what?"
+answer = "Synthetic Aminos, vitamins and minerals - everything the body needs."
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_g60os"]
+resource_name = "boot500"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("23_f7lgo")
+answer_image = ExtResource("22_3hocy")
+title = "Boot"
+question = "Morpheous shows Neo a training program, where they can load anything from weapons, clothing, anything they need. What is it called?"
+answer = "The Construct."
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_0ro2x"]
+resource_name = "Osiris"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("14_jr867")
+answer_image = ExtResource("13_hsfhm")
+title = "Premeditated"
+question = "In the opening of Revolutions, we learn that the Machines are digging towards Zion. What's the name of the ship that sent the scans before being Destroyed?"
+answer = "The Osiris"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_jr867"]
+resource_name = "Annihilation500"
+script = ExtResource("9_0u8bg")
+Choices = Array[String](["5", "6", "7"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[sub_resource type="Resource" id="Resource_ojuc5"]
+resource_name = "Annihilationr500"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("16_ojuc5")
+answer_image = ExtResource("15_0ro2x")
+title = "annihilation"
+question = "How many times has Zion been destroyed previously?"
+answer = "5"
+value = 500
+has_choice = true
+hints = SubResource("Resource_jr867")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_e1xrj"]
+resource_name = "fear500"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("18_wsl1q")
+answer_image = ExtResource("17_4h1cv")
+title = "Fear"
+question = "Why does Zee not want Link to be the operator on the Nebudchadnezzar?"
+answer = "Because Tank and Dozer, her brothers, died on that ship."
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_wsl1q"]
+resource_name = "Terror500"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("15_5buqs")
+answer_image = ExtResource("14_nk0h5")
+title = "Terrorist"
+question = "What's the name of the crewmember who gets possesed by agent Smith?"
+answer = "Bane"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_nk0h5"]
+resource_name = "Kiss500"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("19_wsl1q")
+answer_image = ExtResource("19_wsl1q")
+title = "Kiss"
+question = "Who does Neo have to Kiss in order to get the keymaker?"
+answer = "Persephone"
+value = 500
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_vxf8y"]
+script = ExtResource("9_0u8bg")
+Choices = Array[String](["The Source", "Machine Ultima", "Deus Ex Machina"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[sub_resource type="Resource" id="Resource_0u8bg"]
+resource_name = "God1000"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("9_54j50")
+answer_image = ExtResource("8_744qp")
+title = "Gods"
+question = "In The Matrix revolutions, what is (according to the credits) the name of the leader of the machines ?"
+answer = "Deus Ex Machina"
+value = 1000
+has_choice = true
+hints = SubResource("Resource_vxf8y")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
+
+[sub_resource type="Resource" id="Resource_rtn3b"]
+script = ExtResource("9_0u8bg")
+Choices = Array[String](["Hindu Scripture", "German folklore", "Hebrew Tanakh"])
+metadata/_custom_type_script = "uid://k1e3hjoryoed"
+
+[sub_resource type="Resource" id="Resource_hsfhm"]
+resource_name = "Scripture2000"
+script = ExtResource("1_xrbpu")
+question_image = ExtResource("12_rtn3b")
+answer_image = ExtResource("11_vxf8y")
+title = "Lore"
+question = "In the final battle between Neo and Smith - the climactic composition \"Neodämmerung\" is playing, the lyrics are picked out of what source?? ?"
+answer = "The Hindu Scripture of Upanishads"
+value = 2000
+has_choice = true
+hints = SubResource("Resource_rtn3b")
+metadata/_custom_type_script = "uid://bpwvew6iwebbu"
 
 [resource]
 script = ExtResource("2_c5v2t")
 category_name = "Trivia"
 category_image = ExtResource("1_c5v2t")
-questions = Array[ExtResource("1_xrbpu")]([ExtResource("3_wamyu"), ExtResource("4_8sjra"), ExtResource("5_8sjra")])
+questions = Array[ExtResource("1_xrbpu")]([ExtResource("5_8sjra"), SubResource("Resource_g0xj5"), ExtResource("3_wamyu"), SubResource("Resource_g60os"), SubResource("Resource_0ro2x"), SubResource("Resource_ojuc5"), SubResource("Resource_e1xrj"), SubResource("Resource_wsl1q"), SubResource("Resource_nk0h5"), ExtResource("4_8sjra"), SubResource("Resource_0u8bg"), SubResource("Resource_hsfhm")])
 metadata/_custom_type_script = "uid://c1n3rimhq6alw"

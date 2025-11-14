@@ -11,5 +11,5 @@ answer_image = ExtResource("1_qbrbm")
 title = "Cradle"
 question = "What is the name of the Machine Nation"
 answer = "Zero One (01)"
-value = 150
+value = 250
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"

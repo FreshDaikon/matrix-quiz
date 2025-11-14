@@ -11,5 +11,5 @@ answer_image = ExtResource("1_hfwd6")
 title = "WhoAmI"
 question = "In the short story \"The Kid\" - there is a wonderful soundtrack titled \"Who am I\" performed by who?"
 answer = "Peace Orchestra"
-value = 250
+value = 500
 metadata/_custom_type_script = "uid://bpwvew6iwebbu"
